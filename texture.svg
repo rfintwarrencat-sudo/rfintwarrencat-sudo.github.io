@@ -1,0 +1,11 @@
+<svg class="texture-filter" xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <filter id="void-texture">
+        <feTurbulence result="noise" numOctaves="3" baseFrequency="0.02" type="turbulence"></feTurbulence>
+        <feGaussianBlur result="blur" stdDeviation="1" in="noise"></feGaussianBlur>
+        <feSpecularLighting result="specular" lighting-color="#ff66cc" specularExponent="20" specularConstant="1" surfaceScale="3" in="blur">
+            <feDistantLight elevation="45" azimuth="90"></feDistantLight>
+        </feSpecularLighting>
+        <feComposite result="lit" operator="over" in2="SourceGraphic" in="specular"></feComposite>
+        <feBlend mode="screen" in2="lit" in="SourceGraphic"></feBlend>
+    </filter>
+</svg>
