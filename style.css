@@ -1,6 +1,7 @@
 @font-face {
-    font-family: 'Univers Next Pro';
-    src: url('https://rfintwarrencat-sudo.github.io/univers-next-pro-black-condensed.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "univers-next-pro";
+  src: url("https://rfintwarrencat-sudo.github.io/marketing/assets/fonts/univers-next-pro-black-condensed.woff2") format("woff2");
+  font-weight: bold;
+  font-stretched: condensed;
+  font-display: swap;
 }
